@@ -12,7 +12,7 @@
  -System aktualisieren
  `sudo apt update && sudo apt upgrade`
  - Tomcat installieren
- `sudo apt install tomcat9 tomcat9 -admin -y`
+ `sudo apt install tomcat10  -y` ** Debian Crostini Version 12 bookworm enthält Tomcat10**
  - Service prüfen
   `systemctl status tomcat`
  - Autostart aktivieren
