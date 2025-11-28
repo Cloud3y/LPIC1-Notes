@@ -2,13 +2,13 @@
 
 ## Tomcat Übungsanleitung
 
-### Ziel
+## Ziel
  - Installation, Konfiguration und Betrieb von Tomcat 
  - Deployment einer Test Applikation
  - Logs prüfen
  - Dokumentation aller Schritte
 
-### Tomcat installation 
+## Tomcat installation 
  -System aktualisieren
  `sudo apt update && sudo apt upgrade`
  - Tomcat installieren
@@ -18,9 +18,9 @@
  - Autostart aktivieren
   `sudo systemctl enable tomcat9`
 
-### Test-Webseite 
+## Test-Webseite 
 
-### Test Applikation deployen 
+## Test Applikation deployen 
   - Test War Datei erzeugen  testapp.war
   - Deployment  `sudo cp testapp.war /var/lib/tomcat9/webapps/`
   - Browser Zugriff  `http://localhost:8080/testapp`
