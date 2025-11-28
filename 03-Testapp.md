@@ -7,7 +7,7 @@
 ## Minimal HTML Seite erstellen
 
 `nano index.html`
-<pre>
+<pre><br>
   ------INHALT----------------------------------------------------––––––––-
   |   <html>                                                              |
   |         <body><h1> Testanwendung auf Tomcat </h1>                     |
@@ -15,22 +15,23 @@
   |        </body>                                                        |
   |   <\html>                                                             |
   -------------------------------------------------------------------------
-</pre>
+<br></pre>
 ## WEB-INF Ordner und web.xml erstellen
   * Tomcat erwartet im Webapp Ordner ~/testapp einen WEB-INF Ordner und eine web.xml
-<pre>
+<pre><br>
    `mkdir -p WEB-INF`
    `nano WEB-INF/web.xml`
-</pre>
+</br></pre>
 
 ## Minimal-Inhalt
       <web-app xmlns="https://xmlns.jcp.org/xml/ns/javaee" version="3.1">
       </web-app>
 
 ## WAR-Datei erzeugen
-
+<pre>
 `cd ..`
 `jar cvf testapp.war -C testapp/ .`
+</pre>
 
 ## Deployment in Tomcat
 `sudo cp testapp.war /var/lib/tomcat10/webapps/`
